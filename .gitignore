@@ -16,8 +16,8 @@ local.properties
 *.keystore
 
 # Firebase & Crashlytics
-firebase-debug.log
-google-services.json
+.firebase-debug.log
+.google-services.json
 
 # APKs and output
 *.apk
