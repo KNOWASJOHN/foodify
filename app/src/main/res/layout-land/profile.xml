@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/name_display"
+        android:layout_width="280dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:text="NAME"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/age_display"
+        android:background="@drawable/border"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:text="AGE"
+        app:layout_constraintEnd_toEndOf="@+id/name_display"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/name_display"
+        app:layout_constraintTop_toBottomOf="@+id/name_display" />
+
+    <TextView
+        android:id="@+id/branch_display"
+        android:background="@drawable/border"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="BRANCH"
+        app:layout_constraintStart_toStartOf="@+id/age_display"
+        app:layout_constraintTop_toBottomOf="@+id/age_display" />
+
+    <TextView
+        android:id="@+id/sem_display"
+        android:background="@drawable/border"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="SEM"
+        app:layout_constraintEnd_toEndOf="@+id/age_display"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/branch_display"
+        app:layout_constraintTop_toBottomOf="@+id/age_display" />
+
+    <TextView
+        android:id="@+id/phone_display"
+        android:background="@drawable/border"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="PHONE NUMBER"
+        app:layout_constraintEnd_toEndOf="@+id/age_display"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/age_display"
+        app:layout_constraintTop_toBottomOf="@+id/sem_display" />
+
+    <TextView
+        android:id="@+id/cceid_display"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:text="CCE ID"
+        app:layout_constraintStart_toStartOf="@+id/phone_display"
+        app:layout_constraintTop_toBottomOf="@+id/phone_display" />
+
+    <TextView
+        android:id="@+id/hostel_display"
+        android:background="@drawable/border"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="HOSTEL"
+        app:layout_constraintEnd_toEndOf="@+id/phone_display"
+        app:layout_constraintTop_toBottomOf="@+id/phone_display" />
+
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cceid_display"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

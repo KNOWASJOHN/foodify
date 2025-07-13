@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vertical">
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/climate_crisis"
+        android:text="DETAILS"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:width="300dp"
+        android:background="#6E000000"
+        android:fontFamily="@font/dela_gothic_one"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingStart="15sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B2FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_title" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:width="300dp"
+        android:background="#6E000000"
+        android:fontFamily="@font/dela_gothic_one"
+        android:hint="Age"
+        android:inputType="numberDecimal"
+        android:paddingStart="15sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:width="300dp"
+        android:background="#6E000000"
+        android:ems="10"
+        android:fontFamily="@font/dela_gothic_one"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:paddingStart="15sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/age"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <EditText
+        android:id="@+id/cceid"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:width="300dp"
+        android:background="#6E000000"
+        android:ems="10"
+        android:fontFamily="@font/dela_gothic_one"
+        android:hint="CCE ID"
+        android:inputType="text"
+        android:paddingStart="15sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/Phone"
+        app:layout_constraintStart_toStartOf="@+id/Phone"
+        app:layout_constraintTop_toBottomOf="@+id/Phone" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/branch"
+        app:boxCornerRadiusBottomStart="12sp"
+        app:boxCornerRadiusBottomEnd="12sp"
+        app:boxCornerRadiusTopStart="12sp"
+        app:boxCornerRadiusTopEnd="12sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        app:layout_constraintEnd_toEndOf="@+id/cceid"
+        app:layout_constraintStart_toStartOf="@+id/cceid"
+        app:layout_constraintTop_toBottomOf="@+id/cceid"
+        android:hint="Branch"
+        >
+
+        <AutoCompleteTextView
+            android:inputType="none"
+            android:id="@+id/branch_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dela_gothic_one"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sem"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:boxCornerRadiusBottomEnd="12sp"
+        app:boxCornerRadiusBottomStart="12sp"
+        app:boxCornerRadiusTopEnd="12sp"
+        app:boxCornerRadiusTopStart="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/branch"
+        app:layout_constraintStart_toStartOf="@+id/branch"
+        app:layout_constraintTop_toBottomOf="@+id/branch">
+
+        <AutoCompleteTextView
+            android:inputType="none"
+            android:id="@+id/sem_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dela_gothic_one"
+            android:hint="Semester"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hostel"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/hostel_facility"
+        app:boxCornerRadiusBottomEnd="12sp"
+        app:boxCornerRadiusBottomStart="12sp"
+        app:boxCornerRadiusTopEnd="12sp"
+        app:boxCornerRadiusTopStart="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/sem"
+        app:layout_constraintStart_toStartOf="@+id/sem"
+        app:layout_constraintTop_toBottomOf="@+id/sem">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/dropdown_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dela_gothic_one"
+            android:inputType="none"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="122dp"
+        android:fontFamily="@font/dela_gothic_one"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hostel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

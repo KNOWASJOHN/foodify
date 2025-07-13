@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="select">Select</string>
+    <string name="Select">select</string>
+    <string name="hostel_facility">Hostel Facility</string>
+    <string name="foodify">Foodify\n</string>
+
+    <string-array name="Hostel">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>
