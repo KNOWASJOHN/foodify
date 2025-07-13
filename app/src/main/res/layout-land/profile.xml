@@ -14,24 +14,43 @@
     android:layout_height="wrap_content"
     android:fillViewport="true">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="223dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/name_display"
+        android:padding="6sp"
         android:layout_width="280dp"
         android:layout_height="37dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/border"
+        android:fontFamily="@font/climate_crisis"
         android:text="NAME"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
+        android:fontFamily="@font/climate_crisis"
+        android:padding="6sp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         android:id="@+id/age_display"
-        android:background="@drawable/border"
         android:layout_width="0dp"
         android:layout_height="37dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/border"
         android:text="AGE"
         app:layout_constraintEnd_toEndOf="@+id/name_display"
         app:layout_constraintHorizontal_bias="0.502"
@@ -39,21 +58,29 @@
         app:layout_constraintTop_toBottomOf="@+id/name_display" />
 
     <TextView
+        android:fontFamily="@font/climate_crisis"
+        android:padding="6sp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         android:id="@+id/branch_display"
-        android:background="@drawable/border"
         android:layout_width="139dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/border"
         android:text="BRANCH"
         app:layout_constraintStart_toStartOf="@+id/age_display"
         app:layout_constraintTop_toBottomOf="@+id/age_display" />
 
     <TextView
+        android:fontFamily="@font/climate_crisis"
+        android:padding="6sp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         android:id="@+id/sem_display"
-        android:background="@drawable/border"
         android:layout_width="139dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/border"
         android:text="SEM"
         app:layout_constraintEnd_toEndOf="@+id/age_display"
         app:layout_constraintHorizontal_bias="1.0"
@@ -61,11 +88,15 @@
         app:layout_constraintTop_toBottomOf="@+id/age_display" />
 
     <TextView
+        android:fontFamily="@font/climate_crisis"
+        android:padding="6sp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         android:id="@+id/phone_display"
-        android:background="@drawable/border"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/border"
         android:text="PHONE NUMBER"
         app:layout_constraintEnd_toEndOf="@+id/age_display"
         app:layout_constraintHorizontal_bias="0.428"
@@ -73,6 +104,10 @@
         app:layout_constraintTop_toBottomOf="@+id/sem_display" />
 
     <TextView
+        android:fontFamily="@font/climate_crisis"
+        android:padding="6sp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         android:id="@+id/cceid_display"
         android:layout_width="139dp"
         android:layout_height="40dp"
@@ -83,36 +118,27 @@
         app:layout_constraintTop_toBottomOf="@+id/phone_display" />
 
     <TextView
+        android:fontFamily="@font/climate_crisis"
+        android:padding="6sp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
         android:id="@+id/hostel_display"
-        android:background="@drawable/border"
         android:layout_width="139dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/border"
         android:text="HOSTEL"
         app:layout_constraintEnd_toEndOf="@+id/phone_display"
         app:layout_constraintTop_toBottomOf="@+id/phone_display" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="183dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="184dp"
-        android:src="@drawable/avatar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/qrcode"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cceid_display"
+        android:layout_width="167dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/avatar"
-/>
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cceid_display" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
