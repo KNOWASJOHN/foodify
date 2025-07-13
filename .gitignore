@@ -1,34 +1,7 @@
-# Gradle
-.gradle/
-build/
-*/build/
-
-# Local configuration
-local.properties
-.idea/
 *.iml
-
-# Logs
-*.log
-
-# Keystore (important!)
-*.jks
-*.keystore
-
-# Firebase & Crashlytics
-.firebase-debug.log
-.google-services.json
-
-# APKs and output
-*.apk
-*.ap_
-*.dex
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Android Studio auto files
-.cxx/
-.externalNativeBuild/
-captures/
+.gradle/
+local.properties
+/.idea/
+/build/
+/.cxx/
+google-services.json
