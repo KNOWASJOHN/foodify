@@ -46,6 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/signup_2" />
 
     <EditText
+        android:textColor="@color/white"
         android:id="@+id/email_2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -72,6 +73,7 @@
         app:layout_constraintVertical_bias="0.038" />
 
     <EditText
+        android:textColor="@color/white"
         android:id="@+id/password_2"
         android:layout_width="0dp"
         android:layout_height="48dp"

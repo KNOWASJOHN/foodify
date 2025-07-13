@@ -30,6 +30,7 @@
         android:paddingStart="10dp"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -89,6 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password_2" />
 
     <EditText
+        android:textColor="@color/white"
         android:id="@+id/password_2"
         android:layout_width="0dp"
         android:layout_height="48dp"
