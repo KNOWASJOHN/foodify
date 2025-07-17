@@ -14,6 +14,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/horizontal">
 
+
     <TextView
         android:id="@+id/detail_title"
         android:layout_width="wrap_content"
@@ -183,20 +184,34 @@
             android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/image_upload"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/_upload_"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Image Upload"
+        android:textColor="@android:color/white"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/hostel"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/hostel"
+        app:layout_constraintTop_toBottomOf="@+id/hostel" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="161dp"
-        android:layout_marginBottom="122dp"
+        android:layout_marginBottom="64dp"
         android:fontFamily="@font/dela_gothic_one"
         android:text="SUBMIT"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hostel" />
+        app:layout_constraintEnd_toEndOf="@+id/hostel"
+        app:layout_constraintStart_toStartOf="@+id/hostel"
+        app:layout_constraintTop_toBottomOf="@+id/image_upload" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
